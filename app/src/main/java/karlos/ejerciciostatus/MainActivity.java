@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText fis;
     private EditText qui;
     private TextView sta;
-    private Button boton;
+    public Button boton;
 
 
     @Override
@@ -28,15 +28,8 @@ public class MainActivity extends AppCompatActivity {
         sta = (TextView) findViewById(R.id.statusAlumn);
         boton = (Button) findViewById(R.id.botonEvaluar);
 
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Status(sta);
-
-            }
-        });
+        boton.setOnClickListener(view -> Status(sta));
     }
-
 
 
     public void Status(View view) {
@@ -50,12 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
         int promedio = (matematicasInt + fisicaInt + quimicaInt) / 3;
 
-        if (promedio >= 6) {
-            sta.setText("Estatus Aprovado con " + promedio);
-        } else if (promedio < 6) {
-            sta.setText("Estatus Reprobado con " + promedio);
-        }
 
+        if (promedio >= 6) {
+            sta.setText(String.format("%s%s", getString(R.string.Aprobado), promedio));
+        } else {
+            sta.setText(String.format("%s%s", getString(R.string.Reprobado), promedio));
+        }
 
     }
 

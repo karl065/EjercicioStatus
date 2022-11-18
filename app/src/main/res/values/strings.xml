@@ -5,5 +5,8 @@
     <string name="txtFisicaString">Fisica</string>
     <string name="txtQuimicaString">Quimica</string>
     <string name="txtEvaluar">Evaluar</string>
+    <string name="Aprobado">Estatus Aprobado con:</string>
+    <string name="Reprobado">Estatus Reprobado con:</string>
+
 
 </resources>
