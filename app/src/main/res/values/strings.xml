@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">EjercicioStatus</string>
+    <string name="txtAlumnstring">Estatus del alumno</string>
+    <string name="txtMateString">Matematicas</string>
+    <string name="txtFisicaString">Fisica</string>
+    <string name="txtQuimicaString">Quimica</string>
+    <string name="txtEvaluar">Evaluar</string>
+
 </resources>
